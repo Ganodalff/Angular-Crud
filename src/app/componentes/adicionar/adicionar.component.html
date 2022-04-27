@@ -1,0 +1,14 @@
+<form class="adicionar-form-add" [formGroup]="formularioProdutos" (ngSubmit)="enviarDados()" enctype="multipart/form-data">
+    <label>Nome Do Produto</label>
+    <input type="text" name="" formControlName="nome" placeholder="Nome do Produto" required>
+    <label>Descrição</label>
+    <input type="text" name="" formControlName="descricao" placeholder="Descrição do Produto" required>
+    <label>Quantidade</label>
+    <input type="number" name="" formControlName="quantidade" placeholder="Quantidade do Produto" required>
+    <label>Valor</label>
+    <input type="text" name="" formControlName="valor" placeholder="Valor do Produto" required>
+    <label>Imagem</label>
+    <input type="text" name="" formControlName="image" placeholder="Link imagem" required>
+    <button type="submit" name="">CADASTRAR</button>
+</form>
+

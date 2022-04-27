@@ -1,0 +1,117 @@
+/* O estilo será aplicado da seguinte forma
+
+    - Snake_case
+    - Nome do componente + tag + descrição da tag
+
+    litas_Div_Top
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.index_nav_header{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em 2em 5em;
+    align-items: center;
+    box-shadow: 0px 7px 13px -5px rgba(0,0,0,0.10);
+}
+.index_div_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index_div_header > img{
+    width: 20%;
+    max-height: 100%;
+    margin:0;
+    padding: 0;
+}
+
+.index_div_a_header > a{
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+.index_div_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+/* Componente Listar */
+
+.listar-div-table > thead > tr > th {
+    padding:1em;
+    border-bottom: 0.1em solid black;
+}
+
+.listar-div-table > tbody > tr > td {
+    padding:1em;
+}
+
+/* Componente Adicionar */
+
+.adicionar-form-add{
+    color: black;
+    width:25em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 0.6em;
+}
+
+.adicionar-form-add > input {
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.adicionar-form-add > button {
+    letter-spacing: 0.1em;
+    margin-top: 2em;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Componente Detalhar */
+
+.detalhar-form-add{
+    color: black;
+    width:25em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 0.6em;
+}
+
+.detalhar-form-add > input {
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.detalhar-form-add > input {
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.detalhar-div-imagem > img{
+    margin-top: 1.1em;
+    border: 0.1em solid #4f4f4f;
+    border-radius: 50%;
+    width: 100%;
+}

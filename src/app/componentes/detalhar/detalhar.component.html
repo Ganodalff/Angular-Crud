@@ -1,0 +1,13 @@
+<form class="detalhar-form-add" [formGroup]="formularioProdutos" enctype="multipart/form-data">
+    <label>Nome Do Produto</label>
+    <input type="text" name="" formControlName="nome" placeholder="Nome do Produto" readonly>
+    <label>Descrição</label>
+    <input type="text" name="" formControlName="descricao" placeholder="Descrição do Produto" readonly>
+    <label>Quantidade</label>
+    <input type="text" name="" formControlName="quantidade" placeholder="Quantidade do Produto" readonly>
+    <label>Valor</label>
+    <input type="text" name="" formControlName="valor" placeholder="Valor do Produto">
+    <div class="detalhar-div-imagem" *ngFor="let produtos of Produtos; let iControl=index">
+        <img src="{{produtos.image}}">
+    </div>
+</form>

@@ -1,0 +1,22 @@
+<table class="listar-div-table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Detalhar</th>
+            <th>Excluir</th>
+        </tr>
+    </thead>
+    <div class="listar-div-table-line"></div>
+    <tbody>
+        <tr class="listar-tr-table"*ngFor="let produtos of Produtos; let iControl=index">
+            <td>{{produtos.nome}}</td>
+            <td>{{produtos.descricao}}</td>
+            <td>{{produtos.valor}}</td>
+            <td class="listar-tr-img"><a target="blank" routerLink="/detalhar/{{produtos.id}}"><img src="assets/img/logoDetails.svg"></a></td>
+            <td class="listar-tr-img"><a target="blank" routerLink="/"(click)="excluirRegistro(produtos.id,iControl)"><img src="assets/img/logoDelete.svg"></a></td>
+        </tr>
+    </tbody>
+</table>
+
